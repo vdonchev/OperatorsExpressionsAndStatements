@@ -3,8 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{5B9B6801-0B50-49B3-81DD-CE82783E1462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average", "Average\Average.csproj", "{6FE2ACC4-40EB-449F-886C-E64FCE39D9A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 [Arithmetic Operators]", "01 [Arithmetic Operators]", "{FA32FFA1-A366-4BEF-A2CE-969C36052748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trapezoid", "Trapezoid\Trapezoid.csproj", "{1B3EB6BC-935E-44CA-B000-22A45FBB52AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastDigit", "LastDigit\LastDigit.csproj", "{1D6C8917-5373-4077-8393-5DFE8BF38446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NthDigit", "NthDigit\NthDigit.csproj", "{3D4DFC58-5D4F-4946-8350-37968C8B7D99}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE2ACC4-40EB-449F-886C-E64FCE39D9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE2ACC4-40EB-449F-886C-E64FCE39D9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE2ACC4-40EB-449F-886C-E64FCE39D9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE2ACC4-40EB-449F-886C-E64FCE39D9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3EB6BC-935E-44CA-B000-22A45FBB52AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3EB6BC-935E-44CA-B000-22A45FBB52AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3EB6BC-935E-44CA-B000-22A45FBB52AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3EB6BC-935E-44CA-B000-22A45FBB52AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6C8917-5373-4077-8393-5DFE8BF38446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6C8917-5373-4077-8393-5DFE8BF38446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6C8917-5373-4077-8393-5DFE8BF38446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6C8917-5373-4077-8393-5DFE8BF38446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4DFC58-5D4F-4946-8350-37968C8B7D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4DFC58-5D4F-4946-8350-37968C8B7D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4DFC58-5D4F-4946-8350-37968C8B7D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4DFC58-5D4F-4946-8350-37968C8B7D99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FE2ACC4-40EB-449F-886C-E64FCE39D9A2} = {FA32FFA1-A366-4BEF-A2CE-969C36052748}
+		{FA32FFA1-A366-4BEF-A2CE-969C36052748} = {5B9B6801-0B50-49B3-81DD-CE82783E1462}
+		{1B3EB6BC-935E-44CA-B000-22A45FBB52AE} = {FA32FFA1-A366-4BEF-A2CE-969C36052748}
+		{1D6C8917-5373-4077-8393-5DFE8BF38446} = {FA32FFA1-A366-4BEF-A2CE-969C36052748}
+		{3D4DFC58-5D4F-4946-8350-37968C8B7D99} = {FA32FFA1-A366-4BEF-A2CE-969C36052748}
 	EndGlobalSection
 EndGlobal
