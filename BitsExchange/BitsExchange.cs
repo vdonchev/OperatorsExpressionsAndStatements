@@ -33,6 +33,7 @@ class BitsExchange
                 num = num | mask;
             }
         }
+
         Console.WriteLine(num);
     }
 }
