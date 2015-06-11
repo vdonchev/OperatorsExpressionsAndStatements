@@ -7,45 +7,40 @@ class BitExchange
         long num = long.Parse(Console.ReadLine());
         int pos1 = int.Parse(Console.ReadLine());
         int pos2 = int.Parse(Console.ReadLine());
-        int numOfBits = int.Parse(Console.ReadLine());
+        int bits = int.Parse(Console.ReadLine());
 
-        if (Math.Abs(pos1 - pos2) < numOfBits)
+        if (Math.Min(pos1, pos2) < 0 || Math.Max(pos1, pos2) > 31 || Math.Max(pos1, pos2) + bits > 31)
+        {
+            Console.WriteLine("out of range");
+            return;
+        }
+        else if (Math.Abs(pos1 - pos2) <= bits)
         {
             Console.WriteLine("overlapping");
             return;
         }
 
-        if ((Math.Max(pos1, pos2) + numOfBits) > 31)
-        {
-            Console.WriteLine("out of range");
-            return;
-        }
-
-        for (int i = 0; i < numOfBits; i++)
+        for (int i = 0; i < bits; i++)
         {
             long bit1 = num >> (pos1 + i) & 1;
             long bit2 = num >> (pos2 + i) & 1;
 
             if (bit1 == 0)
             {
-                int mask = ~(1 << (pos2 + i));
-                num = num & mask;
+                num = num & ~(1 << (pos2 + i));
             }
             else
             {
-                int mask = 1 << (pos2 + i);
-                num = num | mask;
+                num = num | 1 << (pos2 + i);
             }
 
             if (bit2 == 0)
             {
-                int mask = ~(1 << (pos1 + i));
-                num = num & mask;
+                num = num & ~(1 << (pos1 + i));
             }
             else
             {
-                int mask = 1 << (pos1 + i);
-                num = num | mask;
+                num = num | 1 << (pos1 + i);
             }
         }
 
