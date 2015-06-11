@@ -11,7 +11,7 @@ class BitSifting
         for (int i = 0; i < sieves; i++)
         {
             long sieve = long.Parse(Console.ReadLine());
-            num = num & ~ sieve;
+            num = num & ~sieve;
         }
 
         for (int i = 0; i < 64; i++)
@@ -21,6 +21,5 @@ class BitSifting
         }
 
         Console.WriteLine(count);
-        
     }
 }
